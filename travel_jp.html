@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        .travel {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .travel-plot {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .travel-plot .point {
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: #EAC100;
+        }
+        .travel-plot .line {
+            width: 20px;
+            height: 1px;
+            background-color: black;
+        }
+        .travel-line {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .travel-line .line {
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 1px;
+            height: 50px;
+            background-color: black;
+        }
+        .travel-line .route {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(0,0,0, 0.1);
+        }
+    </style>
+    <title>日本旅行</title>
+</head>
+<body>
+    <div class="travel">
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                关西国际机场1号航站楼
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行就在机场里面
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                Hotel Nikko Kansai Airport
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                乘坐 06:40 出发京都的ＨＡＲＵＫＡ 2，在Kyoto Station下车（1小时 22分钟，5 站）。
+
+                步行（用时约 3分钟）
+
+                乘坐 08:13 出发大覚寺行的市営２８，在四条大宫下车（12分钟，7 站）。
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                京都车站kyoto-station
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 3分钟）
+
+                乘坐 11:34 出发京都駅前行的市営２６，在烏丸七条（バス）下车（13分钟，7 站）。
+
+                步行（用时约 11分钟）
+
+                https://goo.gl/maps/6nVfbovP3ey
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                京都Piece旅舍，Piece Hostel Kyoto
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 12分钟）
+
+                乘坐 13:47 出发北大路バスターミナル行的市営２０６乙，在千本出水（バス）下车（22分钟，12 站）。
+
+                https://goo.gl/maps/ub7J9HnoQzP2
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                千本今出水站
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                乘坐 15:03 出发みぶ操車場前行的市営２０１乙，在烏丸今出川（バス）下车（12分钟，7 站）。
+
+                步行（用时约 3分钟）
+
+                乘坐 15:22 出发国际会馆的乌丸线，在鞍马口下车（2分钟，1 站）。
+
+                https://goo.gl/maps/6RxnXWUXaA72
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                千本鞍马口站【体验日本文化温泉】
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                乘坐 17:32 出发新田边的乌丸线，在Kyoto Station下车（13分钟，6 站）。
+
+                步行（用时约 6分钟）
+
+                https://goo.gl/maps/1Vsiwa16wAG2
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                京都车站第一旭拉面/新福菜馆
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 1分钟）
+
+                乘坐 21:33 出发横大路痴車庫前行的市営８１，在京都駅八条口アバンティ前（バス）下车（1分钟，1 站）。
+
+                步行（用时约 2分钟）
+
+                https://goo.gl/maps/B8VgoiDgo9F2
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                京都Piece旅舍，Piece Hostel Kyoto
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 7分钟）
+
+                乘坐 06:41 出发九条車庫前行的市営２０２甲，在清水道题（バス）下车（9分钟，7 站）。
+
+                https://goo.gl/maps/yw3RR1acoMw
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                清水道站【清水寺】
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                乘坐 10:41 出发太秦天神川駅前行的市営８０，在五条高倉（バス）下车（14分钟，7 站）。
+
+                步行（用时约 3分钟）
+
+                https://goo.gl/maps/whfEm1dAhfx
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                京都 醉美梦馆Yumeyakata 和服体验，穿和服
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 6分钟）
+
+                乘坐 11:39 出发r錦林車庫前行的市営１７，在河原町三条（バス）下车（7分钟，3 站）。
+
+                步行（用时约 1分钟）
+
+                https://goo.gl/maps/iSagpDZnSjm
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                三条通和原町【豆雅传豆腐料理】
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                袛园花见小路及白川南通一带散步
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                寺町通
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                三条河原町店
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                乘坐 17:18 出发山越中町行的市営５９，在千本今出川（バス）下车（22分钟，12 站）。
+
+                步行（用时约 4分钟）
+
+                https://goo.gl/maps/DHMSrihZiYU2
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                江户川【鳗鱼饭】
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 3分钟）
+
+                乘坐 19:34 出发立命館大学前行的市営５１，在烏丸丸太町（バス）下车（11分钟，9 站）。
+
+                步行（用时约 1分钟）
+
+                乘坐 19:52 出发竹田（京都）的乌丸线，在Kyoto Station下车（7分钟，4 站）。
+
+                步行（用时约 5分钟）
+
+                https://goo.gl/maps/iHRpKrmbrdr
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                京都Piece旅舍，Piece Hostel Kyoto
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 3分钟）
+
+                乘坐 19:34 出发立命館大学前行的市営５１，在烏丸丸太町（バス）下车（11分钟，9 站）。
+
+                步行（用时约 1分钟）
+
+                乘坐 19:52 出发竹田（京都）的乌丸线，在Kyoto Station下车（7分钟，4 站）。
+
+                步行（用时约 5分钟）
+
+                https://goo.gl/maps/iHRpKrmbrdr
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                伏见稻荷大社
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                鸭川戏水寻找跳石头
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                四条河原町购物
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                乘坐 21:48 出发京都駅前行的市営４，在河原町正面（バス）下车（4分钟，3 站）。
+
+                步行（用时约 6分钟）
+
+                https://goo.gl/maps/QEW1VyjLst92
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                花坊旅馆，66-2 Shokuya-cho, Shimo Juzuyamachi, Agaru, Akazu-dori, Shimogyo-ku
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 13分钟）
+
+                乘坐 06:51 出发近铁奈良的近铁京都线，在新大宫下车（42分钟，10 站）。
+
+                步行（用时约 9分钟）
+
+                https://goo.gl/maps/MaSt7ZSEZM82
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                奈良
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 9分钟）
+
+                乘坐 08:11 出发近铁奈良鹿的近铁奈良线，在近铁奈良下车（3分钟，1 站）。
+
+                步行（用时约 27分钟）
+
+                https://goo.gl/maps/Sr4sKXMG4bE2
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                春日大社
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                奈良公园
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                东大寺大佛殿
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                福智町的44-1的果子店
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                元喜神料理店
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 4分钟）
+
+                乘坐 21:46 出发大阪难波的近铁奈良线，在大阪上本町下车（38分钟，8 站）。
+
+                步行（用时约 2分钟）
+
+                乘坐 22:36 出发大阪駅前行的６２号，在大阪城大手前（バス）下车（5分钟，5 站）。
+
+                步行（用时约 1分钟）
+
+                https://goo.gl/maps/ACJHGqxV81k
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                大阪
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 1分钟）
+
+                乘坐 22:27 出发住吉車庫前［営業所内］行的６２号，在上本町六丁目［北］（バス）下车（6分钟，5 站）。
+
+                步行（用时约 3分钟）
+
+                乘坐 22:40 出发大阪难波的近铁奈良线，在近铁日本桥下车（2分钟，1 站）。
+
+                步行（用时约 3分钟）
+
+                https://goo.gl/maps/t7SdMvn6iEC2
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                坝镇乐博提润酒店(Hotel Le Botejour Nanba)
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                心斋桥地区，【質屋大黒屋 大阪ミナミ店】【夫妇善哉】红豆年糕汤
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                心斋桥/道顿崛
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                堀江地区，地下鉄四ツ橋線「四ツ橋駅」下車
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 6分钟）
+
+                乘坐 20:55 出发新大阪的御堂筋线，在梅田下车（6分钟，3 站）。
+
+                步行（用时约 2分钟）
+
+                https://goo.gl/maps/c4MhV7iUFuH2
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                大阪新阪急酒店(Hotel New Hankyu Osaka)
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                梅田空中庭院展望台
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                梅田百货
+            </div>
+        </div>
+        <div class="travel-line">
+            <div class="line">
+            </div>
+            <div class="route">
+                步行（用时约 2分钟）
+
+                乘坐 10:40 出发关西机场第一航站楼的关西机场交通车，在关西机场第一航站楼下车（50分钟，1 站）。
+
+                步行（用时约 2分钟）
+
+                https://goo.gl/maps/GnTQ7XSrBf12
+            </div>
+        </div>
+        <div class="travel-plot">
+            <div class="point">
+            </div>
+            <div class="line">
+            </div>
+            <div class="stop">
+                关西国际机场T2航站楼
+            </div>
+        </div>
+    </div>
+</body>
+</html>
